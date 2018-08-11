@@ -1,0 +1,18 @@
+#segmentGroup .ui.segment {
+  border-radius: 0rem;
+  border: none;
+}
+
+#segmentGroup .ui.segments {
+  border: none;
+}
+
+#homeMenu .ui.menu {
+  margin: 0rem 0em;
+  font-weight: normal;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+          box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0rem;
+  min-height: 2.85714286em;
+}
