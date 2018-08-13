@@ -21,18 +21,22 @@ class HoopUp extends Component {
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
+              <a href="https://github.com/demo716/HoopUp" target="_blank">
               <Button animated>
               <Button.Content hidden>Github</Button.Content>
               <Button.Content visible>
                 <Icon name='github' />
               </Button.Content>
               </Button>
+              </a>
+              <a href="https://www.youtube.com/watch?v=YT1MZKLml4U" target="_blank">
               <Button animated>
               <Button.Content hidden>Youtube</Button.Content>
               <Button.Content visible>
                 <Icon name='youtube' />
               </Button.Content>
               </Button>
+              </a>
           </Card.Content>
         </Card>
       </div>
