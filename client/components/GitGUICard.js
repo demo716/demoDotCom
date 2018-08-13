@@ -21,18 +21,22 @@ class GitGUI extends Component {
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
-              <Button animated>
+              <a href="https://github.com/CapstoneGitGui/Github_gui" target="_blank">
+              <Button animated color="black">
               <Button.Content hidden>Github</Button.Content>
               <Button.Content visible>
                 <Icon name='github' />
               </Button.Content>
               </Button>
-              <Button animated>
+              </a>
+              <a href="https://youtu.be/Mf5f1PtdSNw" target="_blank">
+              <Button animated color="red">
               <Button.Content hidden>Youtube</Button.Content>
               <Button.Content visible>
                 <Icon name='youtube' />
               </Button.Content>
               </Button>
+              </a>
           </Card.Content>
         </Card>
       </div>

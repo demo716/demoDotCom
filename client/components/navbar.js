@@ -10,12 +10,12 @@ export default class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      activeItem: 'home'
+      activeItem: ''
     }
     this.handleItemClick = this.handleItemClick.bind(this)
   }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleItemClick = (e, { name }) => this.setState({ activeItem: '' })
 
   render() {
     const { activeItem } = this.state
