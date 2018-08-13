@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import { Button, Card, Image, Segment } from 'semantic-ui-react'
+import { Button, Card, Image, Segment, ButtonContent, Icon } from 'semantic-ui-react'
 
 /**
  * COMPONENT
@@ -23,14 +23,18 @@ class ProjectsGroup extends Component {
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <div className='ui two buttons'>
-              <Button basic color='green'>
-                Approve
+              <Button animated>
+              <Button.Content hidden>Github</Button.Content>
+              <Button.Content visible>
+                <Icon name='github' />
+              </Button.Content>
               </Button>
-              <Button basic color='red'>
-                Decline
+              <Button animated>
+              <Button.Content hidden>Deployed</Button.Content>
+              <Button.Content visible>
+                <Icon name='hand spock outline' />
+              </Button.Content>
               </Button>
-            </div>
           </Card.Content>
         </Card>
       </Card.Group>
