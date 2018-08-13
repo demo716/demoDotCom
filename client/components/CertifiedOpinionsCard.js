@@ -21,18 +21,22 @@ class CertifiedOpinions extends Component {
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
-              <Button animated>
+              <a href="https://github.com/h-a-m-r-time/grace-shopper" target="_blank">
+              <Button animated color="black">
               <Button.Content hidden>Github</Button.Content>
               <Button.Content visible>
                 <Icon name='github' />
               </Button.Content>
               </Button>
-              <Button animated>
+              </a>
+              <a href="https://opinionated-oasis-4.herokuapp.com/" target="_blank">
+              <Button animated color="violet">
               <Button.Content hidden>Heroku</Button.Content>
               <Button.Content visible>
                 <Icon name='hand spock outline' />
               </Button.Content>
               </Button>
+              </a>
           </Card.Content>
         </Card>
       </div>
