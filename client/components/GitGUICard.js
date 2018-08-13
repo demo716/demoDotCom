@@ -6,7 +6,7 @@ import { Button, Card, Image, Segment, ButtonContent, Icon } from 'semantic-ui-r
 /**
  * COMPONENT
  */
-class CertifiedOpinions extends Component {
+class GitGUI extends Component {
 
   render() {
     return (
@@ -14,10 +14,10 @@ class CertifiedOpinions extends Component {
         <Card>
           <Card.Content>
             {/* <Image floated='right' size='mini' src='/images/avatar/large/steve.jpg' /> */}
-            <Card.Header>Certified Opinions</Card.Header>
+            <Card.Header>GitGUI</Card.Header>
             <Card.Meta>Developer</Card.Meta>
             <Card.Description>
-              An e-commerce web application where users can create, buy and certify their opinions.
+              An Electron based GUI of Github where users can view, commit, push and pull from their repositories.
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
@@ -28,9 +28,9 @@ class CertifiedOpinions extends Component {
               </Button.Content>
               </Button>
               <Button animated>
-              <Button.Content hidden>Heroku</Button.Content>
+              <Button.Content hidden>Youtube</Button.Content>
               <Button.Content visible>
-                <Icon name='hand spock outline' />
+                <Icon name='youtube' />
               </Button.Content>
               </Button>
           </Card.Content>
@@ -40,4 +40,4 @@ class CertifiedOpinions extends Component {
   }
 }
 
-export default CertifiedOpinions
+export default GitGUI

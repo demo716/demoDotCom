@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import { Button, Card, Image, Segment, ButtonContent, Icon } from 'semantic-ui-react';
 import CertifiedOpinions from './CertifiedOpinionsCard';
 import HoopUp from './HoopUpCard';
+import GitGUI from './GitGUICard';
 
 /**
  * COMPONENT
@@ -17,6 +18,7 @@ class ProjectsGroup extends Component {
       <Card.Group>
         <CertifiedOpinions />
         <HoopUp />
+        <GitGUI />
       </Card.Group>
       </Segment>
       </div>
