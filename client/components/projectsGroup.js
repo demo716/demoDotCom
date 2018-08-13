@@ -15,7 +15,7 @@ class ProjectsGroup extends Component {
     return (
       <div id="projectsGroup">
       <Segment>
-      <Card.Group>
+      <Card.Group itemsPerRow={3}>
         <CertifiedOpinions />
         <HoopUp />
         <GitGUI />

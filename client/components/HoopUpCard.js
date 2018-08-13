@@ -17,7 +17,7 @@ class HoopUp extends Component {
             <Card.Header>HoopUp</Card.Header>
             <Card.Meta>Developer</Card.Meta>
             <Card.Description>
-              A web app that allows users to schedule and find pick up basketball games in NYC.
+              A web application that allows users to schedule and find pick up basketball games in NYC.
             </Card.Description>
           </Card.Content>
           <Card.Content extra>

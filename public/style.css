@@ -16,3 +16,9 @@
   border-radius: 0rem;
   min-height: 2.85714286em;
 }
+
+#projectsGroup .ui.three.cards {
+  justify-content: space-evenly;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
