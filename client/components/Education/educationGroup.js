@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import { Card, Segment, Grid, GridRow, Header } from 'semantic-ui-react';
+import { Card, Segment, Grid, GridRow, Header, GridColumn } from 'semantic-ui-react';
 import Fullstack from './FullstackCard';
 import Nyu from './CollegeCard';
 
@@ -15,15 +15,17 @@ class EducationGroup extends Component {
       <div>
       <Segment>
         <Grid>
-          <GridRow>
-          <Header size='large'>Education</Header>
+          <GridRow centered columns={2}>
+            <GridColumn>
+              <Header size='large' textAlign='center'>Education</Header>
+            </GridColumn>
           </GridRow>
           <GridRow>
           <div id="educationGroup">
-          <Card.Group itemsPerRow={2}>
-            <Fullstack />
-            <Nyu  />
-          </Card.Group>
+            <Card.Group itemsPerRow={2}>
+              <Fullstack />
+              <Nyu />
+            </Card.Group>
           </div>
           </GridRow>
         </Grid>

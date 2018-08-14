@@ -15,11 +15,11 @@ class ProjectsGroup extends Component {
     return (
       <div id="projectsGroup">
       <Segment>
-      <Card.Group itemsPerRow={3}>
-        <CertifiedOpinions />
-        <HoopUp />
-        <GitGUI />
-      </Card.Group>
+        <Card.Group itemsPerRow={3}>
+          <CertifiedOpinions />
+          <HoopUp />
+          <GitGUI />
+        </Card.Group>
       </Segment>
       </div>
     )
