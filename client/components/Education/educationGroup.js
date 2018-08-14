@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import { Card, Segment, Grid, GridRow, Header } from 'semantic-ui-react';
 import Fullstack from './FullstackCard';
+import Nyu from './CollegeCard';
 
 /**
  * COMPONENT
@@ -21,6 +22,7 @@ class EducationGroup extends Component {
           <div id="educationGroup">
           <Card.Group itemsPerRow={2}>
             <Fullstack />
+            <Nyu  />
           </Card.Group>
           </div>
           </GridRow>
