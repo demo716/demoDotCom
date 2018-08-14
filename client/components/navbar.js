@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Sticky } from 'semantic-ui-react';
 // import {logout} from '../store';
 
 export default class Navbar extends Component {
@@ -22,7 +22,8 @@ export default class Navbar extends Component {
 
     return (
       <div id="homeMenu">
-        <Menu inverted>
+        <Sticky>
+        <Menu inverted color="blue" secondary pointing>
           <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
           <Menu.Item
             name='about'
@@ -35,6 +36,7 @@ export default class Navbar extends Component {
             onClick={this.handleItemClick}
           />
         </Menu>
+        </Sticky>
       </div>
     )
   }
