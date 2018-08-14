@@ -19,8 +19,11 @@ export default class Navbar extends Component {
 
   render() {
     const { activeItem } = this.state
-
+    const transparent = this.props.transparent
     return (
+      <div>
+      {
+      !transparent ?
       <div id="homeMenu">
         <Sticky>
         <Menu inverted color="blue" secondary pointing>
@@ -37,6 +40,26 @@ export default class Navbar extends Component {
           />
         </Menu>
         </Sticky>
+      </div>
+      :
+      <div id="homeMenuFaded">
+      <Sticky>
+      <Menu inverted color="blue" secondary pointing>
+        <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+        <Menu.Item
+          name='about'
+          active={activeItem === 'about'}
+          onClick={this.handleItemClick}
+        />
+        <Menu.Item
+          name='projects'
+          active={activeItem === 'projects'}
+          onClick={this.handleItemClick}
+        />
+      </Menu>
+      </Sticky>
+      </div>
+      }
       </div>
     )
   }
