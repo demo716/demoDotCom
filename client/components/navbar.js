@@ -33,7 +33,6 @@ export default class Navbar extends Component {
       {
       (!transparent) ?
       (<div id="homeMenu">
-        <Sticky>
           <Menu inverted color="blue" secondary pointing>
             <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
             <Menu.Item
@@ -47,7 +46,6 @@ export default class Navbar extends Component {
               onClick={this.handleItemClick}
             />
           </Menu>
-        </Sticky>
       </div>)
       :
       (<div id="homeMenuFaded">

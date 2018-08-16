@@ -4,7 +4,8 @@ import {connect} from 'react-redux'
 import { Button, Segment, Container, Visibility } from 'semantic-ui-react'
 import ProjectsGroup from './Projects/projectsGroup'
 import Navbar from './navbar'
-import EducationGroup from './Education/educationGroup';
+import EducationGroup from './Education/educationGroup'
+import Intro from './intro'
 
 /**
  * COMPONENT
@@ -29,9 +30,9 @@ class Home extends Component {
       <Navbar transparent={transparent} />
       </Visibility> */}
       <Segment.Group>
-      <div id="header">
-      <Segment inverted color="blue" textAlign="center" />
-      </div>
+      <Segment inverted color="blue" textAlign="center">
+        <Intro />
+      </Segment>
         <Segment>About</Segment>
         <EducationGroup />
         <ProjectsGroup />
