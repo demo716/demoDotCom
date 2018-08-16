@@ -6,7 +6,7 @@ import {Home} from './components'
 const App = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Home />
       {/* <Routes /> */}
     </div>

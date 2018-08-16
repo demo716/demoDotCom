@@ -22,15 +22,16 @@ class Home extends Component {
     const { transparent } = this.state;
     return (
       <div id="segmentGroup">
-      <Segment.Group>
-      <Visibility
+      {/* <Visibility
         onBottomPassed={() => this.setState({transparent: true})}
         onBottomPassedReverse={() => this.setState({transparent: false})}
-        >
+      >
+      <Navbar transparent={transparent} />
+      </Visibility> */}
+      <Segment.Group>
       <div id="header">
-      <Segment inverted color="blue" textAlign="center"><Navbar transparent={transparent} /></Segment>
+      <Segment inverted color="blue" textAlign="center" />
       </div>
-      </Visibility>
         <Segment>About</Segment>
         <EducationGroup />
         <ProjectsGroup />
