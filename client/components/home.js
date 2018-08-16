@@ -6,6 +6,7 @@ import ProjectsGroup from './Projects/projectsGroup'
 import Navbar from './navbar'
 import EducationGroup from './Education/educationGroup'
 import Intro from './intro'
+import About from './about';
 
 /**
  * COMPONENT
@@ -33,7 +34,7 @@ class Home extends Component {
       <Segment inverted color="blue" textAlign="center">
         <Intro />
       </Segment>
-        <Segment>About</Segment>
+        <Segment> <About /> </Segment>
         <EducationGroup />
         <ProjectsGroup />
         <Segment>Links</Segment>

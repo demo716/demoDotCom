@@ -21,7 +21,7 @@ class Intro extends Component {
     return (
       <div id="header">
       <Container text>
-        <Header as='h1'>Hi, I'm Marino</Header>
+        <Header as='h1'>Hi, I'm Marino Demo.</Header>
       </Container>
       </div>
     )
