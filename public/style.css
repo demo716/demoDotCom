@@ -37,7 +37,6 @@
   min-height: 700px;
   background-color: #2185d0;
   font-size: 4em;
-  background-image: url('/images/brooklyn_bridge_selfie.jpg')
 }
 
 #header h1.ui.header {
@@ -47,4 +46,7 @@
 
 #about {
   min-height: 500px;
+  padding: 1em;
+  padding-top: 1em;
 }
+

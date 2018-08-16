@@ -34,7 +34,9 @@ class Home extends Component {
       <Segment inverted color="blue" textAlign="center">
         <Intro />
       </Segment>
-        <Segment> <About /> </Segment>
+      <div id="about-Segment">
+        <Segment secondary> <About /> </Segment>
+      </div>
         <EducationGroup />
         <ProjectsGroup />
         <Segment>Links</Segment>
