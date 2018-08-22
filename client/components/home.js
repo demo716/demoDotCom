@@ -6,7 +6,8 @@ import ProjectsGroup from './Projects/projectsGroup'
 import Navbar from './navbar'
 import EducationGroup from './Education/educationGroup'
 import Intro from './intro'
-import About from './about';
+import About from './about'
+import Skills from './skills'
 
 /**
  * COMPONENT
@@ -24,19 +25,13 @@ class Home extends Component {
     const { transparent } = this.state;
     return (
       <div id="segmentGroup">
-      {/* <Visibility
-        onBottomPassed={() => this.setState({transparent: true})}
-        onBottomPassedReverse={() => this.setState({transparent: false})}
-      >
-      <Navbar transparent={transparent} />
-      </Visibility> */}
+      <Navbar />
       <Segment.Group>
       <Segment inverted color="blue" textAlign="center">
         <Intro />
       </Segment>
-      <div id="about-Segment">
-        <Segment secondary> <About /> </Segment>
-      </div>
+        <About />
+        <Skills />
         <EducationGroup />
         <ProjectsGroup />
         <Segment>Links</Segment>
