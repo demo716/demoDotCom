@@ -17,6 +17,20 @@
   min-height: 2.85714286em;
 }
 
+#homeMenuFaded .ui.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0rem 0em;
+  transition-timing-function: ease-in-out;
+  font-weight: normal;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0rem;
+  min-height: 2.85714286em;
+}
+
 #projectsGroup .ui.three.cards {
   justify-content: space-evenly;
   margin-top: 1em;

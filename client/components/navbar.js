@@ -11,9 +11,18 @@ export default class Navbar extends Component {
     super(props)
     this.state = {
       activeItem: '',
-      transparent: this.props.transparent
+      scrolling: false
     }
     this.handleItemClick = this.handleItemClick.bind(this)
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   static getDerivedStateFromProps(nextProps, prevState){
@@ -23,34 +32,42 @@ export default class Navbar extends Component {
     else return null;
   }
 
+  handleScroll(event) {
+    if (window.scrollY === 0 && this.state.scrolling === true) {
+      this.setState({scrolling: false});
+    }
+    else if (window.scrollY !== 0 && this.state.scrolling !== true) {
+        this.setState({scrolling: true});
+    }
+  }
+
   handleItemClick = (e, { name }) => this.setState({ activeItem: '' })
 
   render() {
-    const { activeItem, transparent } = this.state
-    console.log(this.props)
+    let { activeItem, transparent, scrolling } = this.state
+    // console.log(this.props)
     return (
-      <div>
-      {
-      (!transparent) ?
-      (<div id="homeMenu">
-          <Menu inverted color="blue" secondary pointing>
-            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+    <div>
+    { scrolling ?
+        (<div id="homeMenuFaded">
+          <Menu>
+            <Menu.Item name='home' color="blue" active={activeItem === 'home'} onClick={this.handleItemClick} />
             <Menu.Item
+              color="blue"
               name='about'
               active={activeItem === 'about'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
-              name='projects'
+              name='projects' color="blue"
               active={activeItem === 'projects'}
               onClick={this.handleItemClick}
             />
           </Menu>
-      </div>)
-      :
-      (<div id="homeMenuFaded">
-      <Sticky>
-        <Menu inverted color="black" secondary pointing>
+        </div>)
+    :
+      (<div id="homeMenu">
+        <Menu inverted color="blue" secondary pointing>
           <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
           <Menu.Item
             name='about'
@@ -63,10 +80,9 @@ export default class Navbar extends Component {
             onClick={this.handleItemClick}
           />
         </Menu>
-      </Sticky>
       </div>)
-      }
-      </div>
+    }
+    </div>
     )
   }
 }

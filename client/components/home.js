@@ -25,11 +25,11 @@ class Home extends Component {
     const { transparent } = this.state;
     return (
       <div id="segmentGroup">
-      <Navbar />
       <Segment.Group>
-      <Segment inverted color="blue" textAlign="center">
+        <Navbar />
+        {/* <Segment inverted color="blue" textAlign="center"> */}
         <Intro />
-      </Segment>
+        {/* </Segment> */}
         <About />
         <Skills />
         <EducationGroup />
